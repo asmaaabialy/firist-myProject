@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="833f00d4-c742-4d76-99d9-0987872bc542" SettingsBundleGuid="afd1ecc9-e5e7-4450-8646-c559f9a7eedb" Version="4.0.0.0" Owner="ASMAA\THE LAPTOP SHOP" ProjectTemplateGuid="10004f3b-4acf-4425-a3e3-38d3b3514276" ReferenceProjectGuid="00000000-0000-0000-0000-000000000000">
+  <LanguageDirections>
+    <LanguageDirection Guid="b4309414-dbcf-4f3d-87b3-0141504d0ae8" SettingsBundleGuid="14eac7e5-ff0b-4055-b52c-69fa35c28bad" TargetLanguageCode="ar-EG" SourceLanguageCode="en-US">
+      <AutoSuggestDictionaries />
+      <CascadeItem OverrideParent="false" StopSearchingWhenResultsFound="false" />
+    </LanguageDirection>
+  </LanguageDirections>
+  <TermbaseConfiguration>
+    <RecognitionOptions>
+      <ShowWithNoAvailableTranslation>false</ShowWithNoAvailableTranslation>
+      <MinimumMatchValue>70</MinimumMatchValue>
+      <SearchDepth>200</SearchDepth>
+      <SearchOrder>Parallel</SearchOrder>
+    </RecognitionOptions>
+  </TermbaseConfiguration>
+  <SettingsBundles>
+    <SettingsBundle Guid="afd1ecc9-e5e7-4450-8646-c559f9a7eedb">
+      <SettingsBundle>
+        <SettingsGroup Id="TerminologyProviderSettings">
+          <Setting Id="TermbasesOrder">
+            <ArrayOfstring xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            </ArrayOfstring>
+          </Setting>
+          <Setting Id="Termbases">
+            <ArrayOfTermbase xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Sdl.ProjectApi.Implementation.Xml">
+            </ArrayOfTermbase>
+          </Setting>
+        </SettingsGroup>
+        <SettingsGroup Id="FileViewServiceSettings">
+          <Setting Id="SelectedTargetLanguageCode">ar-EG</Setting>
+        </SettingsGroup>
+      </SettingsBundle>
+    </SettingsBundle>
+  </SettingsBundles>
+  <AnalysisBands>
+    <AnalysisBand MinimumMatchValue="50" />
+    <AnalysisBand MinimumMatchValue="75" />
+    <AnalysisBand MinimumMatchValue="85" />
+    <AnalysisBand MinimumMatchValue="95" />
+  </AnalysisBands>
+  <ManualTaskTemplates />
+  <Users>
+    <User UserId="ASMAA\THE LAPTOP SHOP" FullName="Dr.Asmaa Bialy" Description="" Email="asfd@gmail.com" PhoneNumber="013444099995" EmailType="Smtp" />
+  </Users>
+  <CascadeItem OverrideParent="true" StopSearchingWhenResultsFound="false">
+    <CascadeEntryItem PerformConcordanceSearch="true" Penalty="0" PerformUpdate="true" PerformNormalSearch="true">
+      <MainTranslationProviderItem Uri="sdltm.file:///C:/Users/THE LAPTOP SHOP/Desktop/translate-PHD/PHD-الرسالة/القاموس/computer.sdltm" Enabled="true" />
+    </CascadeEntryItem>
+  </CascadeItem>
+  <GeneralProjectInfo IsInPlace="true" IsImported="false" Name="Contains the Transliterator class.docx_en-US_ar-EG" CreatedAt="2022-12-04T06:07:08.7330918Z" StartedAt="2022-12-04T06:07:08.7330918Z" Status="Started" CreatedBy="ASMAA\THE LAPTOP SHOP" />
+  <SourceLanguageCode>en-US</SourceLanguageCode>
+  <ProjectFiles>
+    <ProjectFile Guid="d9658f2c-5032-480f-b047-0504370dca24" Path="" Role="Translatable" Name="Contains the Transliterator class.docx_en-US_ar-EG.sdlxliff" ParentProjectFileGuid="00000000-0000-0000-0000-000000000000" FilterDefinitionId="SDL XLIFF 1.0 v 1.0.0.0">
+      <SpecificTargetLanguages />
+      <LanguageFiles>
+        <LanguageFile Guid="e80046c8-66e1-4cce-8db8-175332b83279" SettingsBundleGuid="05176dc0-a7c7-4743-9f2e-02723637a288" LanguageCode="en-US">
+          <FileVersions>
+            <FileVersion Guid="f01e6920-a432-4b00-9a08-81afcbca2750" VersionNumber="1" Size="68709" FileName="Contains the Transliterator class.docx_en-US_ar-EG.sdlxliff" PhysicalPath="Contains the Transliterator class.docx_en-US_ar-EG.sdlxliff" CreatedBy="ASMAA\THE LAPTOP SHOP" CreatedAt="2022-12-04T06:07:08.7330918Z" FileTimeStamp="2022-12-04T05:16:18.6553677Z" IsAutoUpload="false" />
+          </FileVersions>
+          <AnalysisStatistics WordCountStatus="None" AnalysisStatus="None">
+            <Total Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Repetitions Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Perfect Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <InContextExact Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Exact Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Fuzzy>
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            </Fuzzy>
+            <New Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <NewBaseline Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <NewLearnings Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Locked Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+          </AnalysisStatistics>
+          <ChildFiles />
+        </LanguageFile>
+        <LanguageFile Guid="c19fa3e9-969e-4338-9ca5-95b29aba0946" SettingsBundleGuid="cf711701-3a34-4581-aa08-7c504caa73dc" LanguageCode="ar-EG">
+          <FileVersions>
+            <FileVersion Guid="6f662d90-87db-4574-907d-b8cfbc90e906" VersionNumber="2" Size="68709" FileName="Contains the Transliterator class.docx_en-US_ar-EG.sdlxliff" PhysicalPath="Contains the Transliterator class.docx_en-US_ar-EG.sdlxliff" CreatedBy="ASMAA\THE LAPTOP SHOP" CreatedAt="2022-12-04T06:07:08.7487129Z" FileTimeStamp="2022-12-04T05:16:18.6553677Z" IsAutoUpload="false" />
+          </FileVersions>
+          <AnalysisStatistics WordCountStatus="None" AnalysisStatus="None">
+            <Total Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Repetitions Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Perfect Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <InContextExact Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Exact Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Fuzzy>
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+              <CountData Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            </Fuzzy>
+            <New Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <NewBaseline Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <NewLearnings Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Locked Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+          </AnalysisStatistics>
+          <ConfirmationStatistics Status="None">
+            <Unspecified Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Draft Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <Translated Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <RejectedTranslation Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <ApprovedTranslation Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <RejectedSignOff Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+            <ApprovedSignOff Words="0" Characters="0" Segments="0" Placeables="0" Tags="0" />
+          </ConfirmationStatistics>
+          <ChildFiles />
+        </LanguageFile>
+      </LanguageFiles>
+      <PreviousBilingualFiles />
+    </ProjectFile>
+  </ProjectFiles>
+  <Tasks />
+</Project>

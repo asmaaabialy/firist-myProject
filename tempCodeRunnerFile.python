@@ -1,0 +1,119 @@
+import re
+
+
+TESTS = [
+    ("السلام عليكم", ["السلام", "عليكم"], "الكلمات البسيطة"),
+    ("يجب عليك شراء:10كيلو موز، و5كيلو سبانخ", [
+     "يجب", "عليك", "شراء", ":", "10", "كيلو", "موز", "،", "و", "5", "كيلو", "سبانخ"], "الكلمات المقحمة بالأرقام وعلامات الترقيم"),
+    ("10.32 .32 7 10.", ["10.32", ".32", "7",  "10", "."], "الأرقام العشرية")
+]
+
+def main():
+    for test in TESTS:
+        res = Tokenizer(test[0]).tokenize()
+        if res != test[1]:
+            print("حدث خطأ في إختبار {}".format(test[2]))
+            print("النص: {}".format(test[0]))
+            print("النتيجة المتوقعة: {}".format(test[1]))
+            print("النتيجة الفعلية: {}".format(res))
+        print("تم إختبار \"{}\" بنجاح".format(test[2]))
+
+
+class Tokenizer:
+    def _init_(self, input):
+        self.start = 0
+        self.current = 0
+        self.input = input
+        self.tokens = []
+
+    def consume(self):
+        self.current += 1
+        return self.cur_char()
+
+    def get(self, idx):
+        if idx >= len(self.input):
+            return None
+        return self.input[idx]
+
+    # note: can return None
+    def peek(self, amount):
+        return self.get(self.current + amount)
+
+    def pop(self):
+        self.tokens.append(self.input[self.start:self.current])
+        self.start = self.current
+
+    def skip(self):
+        self.consume()
+        self.start = self.current
+
+    def cur_char(self):
+        return self.get(self.current)
+
+    def at_end(self):
+        return self.current >= len(self.input)
+
+    def tokenize(self):
+        while True:
+            # whitespaces and newlines
+            cur = self.cur_char()
+            if cur is None:
+                break
+            if re.match('\s', cur) is not None:
+                self.skip()
+            # words
+            elif cur.isalpha():
+                self.consume()
+                while True:
+                    cur = self.cur_char()
+                    if cur is None:
+                        break
+                    if not cur.isalpha():
+                        break
+                    self.consume()
+                self.pop()
+            # numbers and floats
+            elif cur.isdigit():
+                self.consume()
+                while True:
+                    cur = self.cur_char()
+                    if cur is None:
+                        break
+                    if not cur.isdigit():
+                        break
+                    self.consume()
+                if cur == '.':
+                    next = self.peek(1)
+                    if next is not None and next.isdigit():
+                        cur = self.consume()  # '.'
+                        self.consume()  # consider omitting it
+                        while True:
+                            cur = self.cur_char()
+                            if cur is None:
+                                break
+                            if not cur.isdigit():
+                                break
+                            self.consume()
+                self.pop()
+            # floats starting with '.'
+            elif cur == '.':
+                cur = self.consume()
+                if cur is None:
+                    pass
+                elif cur.isdigit():
+                    while True:
+                        cur = self.cur_char()
+                        if cur is None:
+                            break
+                        if not cur.isdigit():
+                            break
+                        self.consume()
+                self.pop()
+                # punctuation marks
+            else:
+                self.consume()
+                self.pop()
+        return self.tokens
+
+
+main()
